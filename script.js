@@ -1,9 +1,9 @@
 // --- TYPEWRITER EFFECT ---
 const typewriterElement = document.getElementById('typewriter');
 const phrases = [
-    "I build things for the web.",
-    "A passionate AI enthusiast.",
-    "A full-stack developer."
+  "I code for fun.",
+  "AI is my thing.",
+  "I train CNNs to see the world."
 ];
 let phraseIndex = 0;
 let charIndex = 0;
