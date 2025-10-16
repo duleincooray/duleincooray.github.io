@@ -2,6 +2,8 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #111827; /* A dark navy blue */
     color: #d1d5db; /* A light gray for text */
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* Custom gradient for text */
