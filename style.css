@@ -1,0 +1,43 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* A dark navy blue */
+    color: #d1d5db; /* A light gray for text */
+}
+
+/* Custom gradient for text */
+.text-gradient {
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Simple fade-in animation for sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Typewriter cursor style */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #818cf8; /* A nice violet color */
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+/* Blinking animation for the cursor */
+@keyframes blink {
+    0% { background-color: #818cf8; }
+    49% { background-color: #818cf8; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: #818cf8; }
+}
+
