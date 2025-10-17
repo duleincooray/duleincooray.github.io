@@ -41,20 +41,40 @@
 
         <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex items-center">
-            <div class="max-w-3xl">
-                <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
-                    Hi, I'm Dulein Cooray
-                </h1>
-                <h2 class="text-3xl md:text-5xl font-bold text-gradient mt-2 h-20 md:h-24">
-                    <span id="typewriter"></span><span class="cursor"></span>
-                </h2>
-                <p class="mt-6 text-lg text-gray-400">
-                    I’m a Computer Science student who loves exploring AI and building cool projects that bring ideas to life. Welcome to my personal corner of the internet.
-                </p>
-                <div class="mt-8">
-                    <a href="#projects" class="bg-sky-500 text-white font-semibold px-6 py-3 rounded-md hover:bg-sky-600 transition duration-300">
-                        View My Work
-                    </a>
+            <div class="w-full grid md:grid-cols-5 gap-10 items-center">
+                <!-- Column 1: Text Content -->
+                <div class="md:col-span-3">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+                        Hello, <br> I'm Dulein Cooray
+                    </h1>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gradient mt-2 h-20 md:h-24">
+                        <span id="typewriter"></span><span class="cursor"></span>
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-400">
+                        A dedicated Computer Science student with a passion for web development, AI, and graphic design. Welcome to my personal corner of the internet.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#projects" class="bg-sky-500 text-white font-semibold px-6 py-3 rounded-md hover:bg-sky-600 transition duration-300">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2: Ghost Illustration -->
+                <div class="hidden md:col-span-2 md:flex justify-center items-center">
+                    <div id="ghost-container" class="w-full max-w-xs hero-illustration">
+                        <svg id="ghost" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                  <stop offset="0%" style="stop-color:rgb(165, 243, 252);stop-opacity:1" />
+                                  <stop offset="100%" style="stop-color:rgb(56, 189, 248);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#grad1)" d="M48.5,-55.9C61.8,-46.1,72.3,-31.1,76.2,-14.2C80.1,2.7,77.5,21.5,68.9,36.5C60.3,51.5,45.7,62.7,29.3,69.5C12.9,76.3,-4.2,78.7,-20.4,73.7C-36.6,68.7,-51.9,56.3,-62,41.2C-72.1,26.1,-77.1,8.3,-74.3,-7.9C-71.6,-24.1,-61.3,-38.7,-48.2,-48.9C-35.1,-59.1,-19.2,-64.9,-3.6,-63.3C12,-61.7,35.2,-65.7,48.5,-55.9Z" transform="translate(100 100)" />
+                            <circle cx="85" cy="80" r="8" fill="white"/>
+                            <circle cx="115" cy="80" r="8" fill="white"/>
+                            <path d="M90 110 Q 100 125 110 110" stroke="white" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>

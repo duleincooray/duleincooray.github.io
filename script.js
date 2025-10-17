@@ -83,4 +83,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             mobileMenu.classList.add('hidden');
         }
     });
+
+    // --- Ghost Hover Effect ---
+    const heroSection = document.getElementById('hero');
+    const ghost = document.getElementById('ghost');
+
+    if (heroSection && ghost) {
+        heroSection.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+            
+            // Calculate movement based on cursor position from center of the viewport.
+            // The divisor (e.g., 30) controls the movement sensitivity.
+            const moveX = (clientX - innerWidth / 2) / 30;
+            const moveY = (clientY - innerHeight / 2) / 30;
+
+            // Apply a smooth transition
+            ghost.style.transition = 'transform 0.1s ease-out';
+            ghost.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+
+        // Reset position when mouse leaves the hero section
+        heroSection.addEventListener('mouseleave', () => {
+            ghost.style.transition = 'transform 0.5s ease-in-out';
+            ghost.style.transform = 'translate(0, 0)';
+        });
+    }
 });
