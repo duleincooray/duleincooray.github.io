@@ -1,0 +1,19 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 0000004B 40C2:1CDC
+D:.
+¦   CNAME
+¦   index.html
+¦   README.md
+¦   script.js
+¦   structure.txt
+¦   style.css
+¦   
++---.vscode
+¦       launch.json
+¦       
++---images
+        codegen.jpeg
+        dulein.png
+        IMG_6059.JPG
+        magazine.jpg
+        
